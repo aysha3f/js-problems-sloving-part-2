@@ -7,7 +7,7 @@ let max = numbers[0];
         max = num;
     }
 }
-return max;
+return max; 
 }
 
 const max = getMax(heights);
