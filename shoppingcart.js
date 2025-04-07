@@ -17,3 +17,5 @@ const products = [
   }
   const shoppingCost = cartTotal(products);
   console.log(shoppingCost);
+
+  
