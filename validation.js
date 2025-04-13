@@ -8,3 +8,5 @@ function multiply(num1, num2){
 
 const result = multiply ('5', 'seven');
 console.log(result);
+
+sf
