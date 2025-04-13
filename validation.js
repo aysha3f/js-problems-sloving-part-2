@@ -39,7 +39,10 @@ const price = getPrice(5);
 // console.log(price);
 
 function getSecond (numbers){
-    console.log(Array.isArray(numbers));
+    // console.log(Array.isArray(numbers));
+  if(Array.isArray(numbers) === false){
+return 'Please Provide an array'
+    }
     const second = numbers[1];
     return second;
 }
