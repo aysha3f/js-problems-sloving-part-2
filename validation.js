@@ -27,8 +27,22 @@ const full = fullName ('Akmal')
 
 
 function getPrice(product){
+ if(typeof product !== 'object'){
+    return 'Please provide an object'
+ }
     const price =  product.price;
     return price;
 }
 
-const price = getPrice({name: 'chlkani dandi', price: 35, color: 'blue'})
+// const price = getPrice({name: 'chlkani dandi', price: 35, color: 'blue'});
+const price = getPrice(5);
+// console.log(price);
+
+function getSecond (numbers){
+    console.log(Array.isArray(numbers));
+    const second = numbers[1];
+    return second;
+}
+
+const second = getSecond ([1, 25, 69]);
+console.log(second);
