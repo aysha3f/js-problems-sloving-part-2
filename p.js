@@ -1,21 +1,33 @@
 // Task -1:
 // Find the lowest number in the array below.
 
-const heights2 = [167, 190, 120, 165, 137];
- function getSmall (numbers){
-    let small = numbers[0];
-    for(const num of numbers){
-        if(num < small){
-            small = num;
-        }
-    }
-    return small;
- }
- const low = getSmall(heights2);
- console.log(low);
+// const heights2 = [167, 190, 120, 165, 137];
+//  function getSmall (numbers){
+//     let small = numbers[0];
+//     for(const num of numbers){
+//         if(num < small){
+//             small = num;
+//         }
+//     }
+//     return small;
+//  }
+//  const low = getSmall(heights2);
+// //  console.log(low);
 // Task -2:
 // Find the friend with the smallest name.
-// const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+
+function getSmallName (names){
+    let min = names[0];
+    for(const name of names){
+        if(name.length < min.length){
+            min = name;
+        }
+    }
+    return min;
+}
+const cheap = getSmallName(heights2);
+console.log(cheap)
 
 // Task-3:
 // Your task is to calculate the total budget required to buy electronics:
