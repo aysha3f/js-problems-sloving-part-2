@@ -2,19 +2,17 @@
 // Find the lowest number in the array below.
 
 const heights2 = [167, 190, 120, 165, 137];
-
-function getLow (numbers){
-   let low = numbers[0] ;
-  for (const number of numbers) {
-if(number < low){
- low = number
-}
-   }
-   return low
-}
-const cheap = getLow (heights2);
-console.log(cheap);
-
+ function getSmall (numbers){
+    let small = numbers[0];
+    for(const num of numbers){
+        if(num < small){
+            small = num;
+        }
+    }
+    return small;
+ }
+ const low = getSmall(heights2);
+ console.log(low);
 // Task -2:
 // Find the friend with the smallest name.
 // const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
