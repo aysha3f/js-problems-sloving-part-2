@@ -102,4 +102,5 @@ return total;
         }
         const total = calculateTotalSalary(employees);
         console.log(total);
+        
 
