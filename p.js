@@ -27,7 +27,7 @@ function getSmallName (names){
     return min;
 }
 const cheap = getSmallName(heights2);
-console.log(cheap)
+// console.log(cheap)
 
 // Task-3:
 // Your task is to calculate the total budget required to buy electronics:
@@ -36,6 +36,22 @@ console.log(cheap)
 //     tablet = 15000 tk
 //     mobile = 20000 tk
 // Write a JavaScript function named calculateElectronicsBudget that takes in the number of laptop, tablets, and mobile and returns the total money required.
+
+const perLaptopPrice = 35000;
+const perTabletPrice = 15000;
+const perMobilePrice = 20000;
+
+function calculateElectronicsBudget (laptopQuantity , tabletQuantity, mobileQuantity){
+const laptopTotalTk = laptopQuantity * perLaptopPrice;
+const tabletTotalTk = tabletQuantity * perTabletPrice;
+const mobileTotalTk = mobileQuantity * perMobilePrice;
+
+const total = laptopTotalTk + tabletTotalTk + mobileTotalTk;
+return total;
+}
+
+// const getTotal = calculateElectronicsBudget(1, 2, 4);
+// console.log(getTotal);
 
 // Task-4:
 // You are given an array of phone objects, each containing information about the model, brand, and price. Your task is to write a JavaScript function named findAveragePhonePrice that takes this array as input and returns the average price of phone.
