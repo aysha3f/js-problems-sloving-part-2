@@ -55,18 +55,28 @@ return total;
 
 // Task-4:
 // You are given an array of phone objects, each containing information about the model, brand, and price. Your task is to write a JavaScript function named findAveragePhonePrice that takes this array as input and returns the average price of phone.
-
 // Input
 
+  const phones = [
+        { model: "PhoneA", brand: "Iphone", price: 95000 },
+        { model: "PhoneB", brand: "Samsung", price: 40000 },
+         { model: "PhoneC", brand: "Oppo", price: 26000 },
+        { model: "PhoneD", brand: "Nokia", price: 35000 },
+        { model: "PhoneE", brand: "Iphone", price: 105000 },
+        { model: "PhoneF", brand: "HTC", price: 48000 },
+    ];
 
-//     const phones = [
-//         { model: "PhoneA", brand: "Iphone", price: 95000 },
-//         { model: "PhoneB", brand: "Samsung", price: 40000 },
-//         { model: "PhoneC", brand: "Oppo", price: 26000 },
-//         { model: "PhoneD", brand: "Nokia", price: 35000 },
-//         { model: "PhoneE", brand: "Iphone", price: 105000 },
-//         { model: "PhoneF", brand: "HTC", price: 48000 },
-//     ];
+   function findAveragePhonePrice(phonesQuantity){
+    let sum = 0;
+    for(const phone of phones){
+        sum = sum + phone.price;
+    }
+    let averagePrice = sum / phonesQuantity;
+    return averagePrice;
+   }
+//    const getTotal = findAveragePhonePrice(6)
+//    const getTotal = findAveragePhonePrice(phones.length)
+//    console.log(getTotal);
 // Task -5: (Hard)
 // For each employee their current salary is calculated by multiplying yearly increment with experience then adding the result to the starting salary. Now calculate is the total salary has to be provided by the company in a month.
 
