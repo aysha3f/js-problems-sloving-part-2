@@ -7,4 +7,4 @@ function checkDigitsInName(name) {
     let n = /\d/.test(name);
     return n;
 }
-
+console.log
