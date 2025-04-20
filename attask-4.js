@@ -13,13 +13,13 @@ function calculateFinalScore(obj) {
   if(typeof name !== "string"){
     return "Invalid Input"
   }
-   if(typeof testScore !== number || testScore > 50){
+   if(typeof testScore !== "number" || testScore > 50){
     return "Invalid Input"
    }
-   if(typeof schoolGrade !== number || schoolGrade > 30){
+   if(typeof schoolGrade !== "number" || schoolGrade > 30){
     return "Invalid Input"
    }
-   if(typeof isFFamily !== boolean){
+   if(typeof isFFamily !== "boolean"){
     return "Invalid Input"
    }
    let bonus = 0;
