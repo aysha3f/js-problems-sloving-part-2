@@ -1,14 +1,12 @@
 // node attask-4.js
 
 function calculateFinalScore(obj) {
-    let student = {
-        name: "Rajib",
-        testScore: 45,
-        schoolGrade: 25,
-        isFFamily: true
-      };
-     
-      if(typeof obj !== "object"  || obj !== "number" || obj !== "array"){
+    typeof name = string 
+    typeof testScore = number ( testScore <= 50) 
+    typeof schoolGrade = number ( schoolGrade <=30) 
+    typeof  isFFamily = boolean
+    
+    if(typeof obj !== "string"  || obj !== "number" || obj !== "array"){
         return "Invalid Input"
       }
 
@@ -22,5 +20,4 @@ function calculateFinalScore(obj) {
       else (finalScore < 80){
         return "false"
       }
-     
 }
