@@ -19,4 +19,5 @@ function calculateFinalScore(obj) {
    if(typeof schoolGrade !== number || schoolGrade > 30){
     return "Invalid Input"
    }
+   if(typeof)
 }
