@@ -22,4 +22,11 @@ function calculateFinalScore(obj) {
    if(typeof isFFamily !== boolean){
     return "Invalid Input"
    }
+   let bonus = 0;
+   if (isFFamily === true){
+    bonus = 20;
+   }
+   else{
+    bonus = 0;
+   }
 }
