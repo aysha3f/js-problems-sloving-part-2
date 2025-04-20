@@ -29,4 +29,13 @@ function calculateFinalScore(obj) {
    else{
     bonus = 0;
    }
+
+   let finalScore = testScore + schoolGrade + bonus;
+   if(finalScore >= 80){
+    return true;
+   }
+   else{
+    return false;
+   }
 }
+console.log(calculateFinalScore({ name: "Rajib", testScore: 45,  schoolGrade: 25, isFFamily : true  }))
