@@ -20,6 +20,6 @@ function calculateFinalScore(obj) {
     return "Invalid Input"
    }
    if(typeof isFFamily !== boolean){
-    return "Invaild Input"
+    return "Invalid Input"
    }
 }
