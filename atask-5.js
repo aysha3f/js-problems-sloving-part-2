@@ -42,4 +42,3 @@ console.log(waitingTime([7, 8, 3, 4, 5], "9"))
 // node atask-5.
 
 
-
