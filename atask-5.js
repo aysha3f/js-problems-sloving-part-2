@@ -39,6 +39,6 @@ function  waitingTime(waitingTimes  , serialNumber) {
 console.log(waitingTime([7, 8, 3, 4, 5], "9"))
 
 
-// node atask-5.
+// node atask-5. 
 
 
